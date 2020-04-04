@@ -1,0 +1,25 @@
+{
+  "name": "pm2",
+  "version": "4.2.0",
+  "description": "process manage to manage process",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name hello_aws --log ../logs/app.log ",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop hello_aws",
+    "build": "echo 'Building...'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theDavidOlasupo/NodeHello.git"
+  },
+  "dependencies": {
+    "pm2": "^4.2.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theDavidOlasupo/NodeHello/issues"
+  },
+  "homepage": "https://github.com/theDavidOlasupo/NodeHello#readme"
+}
